@@ -1,9 +1,10 @@
-import { Navbar } from "../../components";
+import { Navbar, TableHeader } from "../../components";
 
 const Home = () => {
     return(
         <>
          <Navbar/>
+         <TableHeader/>
         </>
     )
 }
