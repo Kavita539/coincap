@@ -54,19 +54,13 @@ li {
     cursor: pointer;
 }
 
-@media screen and (max-width: 660px) {
-    .nav-list {
-        visibility: hidden;
-    }
-}
-
 @media screen and (max-width: 850px) {
     .nav-wrapper {
         width: 100%;
     }
 
     .nav-list {
-        width: 30%;
+        display: none;
     }
 
     .nav-logo {

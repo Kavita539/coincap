@@ -26,12 +26,12 @@
     .currency-info-lists {
       height: 8rem;
     }
-    
+
     .currency-info:nth-child(2) {
       text-align: left;
     }
   
     .currency-info-list {
-      visibility: hidden;
+      display: none;
     }
   }
