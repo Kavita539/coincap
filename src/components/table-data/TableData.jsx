@@ -47,8 +47,8 @@ const TableData = () => {
                           alt={item.symbol} />
                       <p>{item.name}</p>
                   </td>
-                  <td>{getCurrencyInDollar(item.priceUsd)}</td>
-                  <td>{getCurrencySystem(item.marketCapUsd)}</td>
+                  <td className="th-mobile-view">{getCurrencyInDollar(item.priceUsd)}</td>
+                  <td className="th-mobile-view">{getCurrencySystem(item.marketCapUsd)}</td>
                   <td className='th-hidden-mobile-view'>
                       {getCurrencyInDollar(item.vwap24Hr)}
                   </td>
@@ -69,7 +69,7 @@ const TableData = () => {
           <button onClick={clickHandler} className='button btn-view-more'>
               View More
           </button>
-          
+
       </>
     );
   };

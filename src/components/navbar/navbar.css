@@ -6,10 +6,13 @@
 
 .nav-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 80%;
     height: 3rem;
-    padding: 2rem;
+    margin: auto;
+    padding-top: 0.5rem;
+    z-index: 22;
 }
 
 li {
@@ -23,15 +26,16 @@ li {
     justify-content: center;
     align-items: center;
     width: 27%;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .nav-list-left {
     margin-left: 4rem;
 }
 
-.nav-list-right{
-    margin-left: 5rem;
+.nav-list-right {
+    margin-left: 4rem;
+    margin-right: 1rem;
 }
 
 .nav-logo {
@@ -44,8 +48,28 @@ li {
     border: none;
     outline: none;
     color: white;
-    padding: 10px 22px;
+    padding: 10px;
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 660px) {
+    .nav-list {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+
+    .nav-list {
+        width: 30%;
+    }
+
+    .nav-logo {
+        margin-left: 1rem;
+    }
 }
