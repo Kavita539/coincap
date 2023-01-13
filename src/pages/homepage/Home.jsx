@@ -1,10 +1,11 @@
-import { Navbar, TableHeader } from "../../components";
+import { Navbar, TableHeader, TableData } from "../../components";
 
 const Home = () => {
     return(
         <>
          <Navbar/>
          <TableHeader/>
+         <TableData/>
         </>
     )
 }
